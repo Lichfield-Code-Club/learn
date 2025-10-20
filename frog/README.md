@@ -1,3 +1,7 @@
+# Intro
+* Each step file shows the code progression
+* The highest numbered step file is the latest version of the game
+
 # Step1
 * This is the basis of a pygame.
 * It draws a window, listens for the quit event and closes the window
