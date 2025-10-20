@@ -1,0 +1,15 @@
+{
+  "cSpell.ignoreWords": [
+    "Aberporth", "tmax", "tmin", "af", "rain", "sun", "Cardiff", "Heathrow", "Bute", "Braemar", "Durham", "Eastbourne", "Armagh", "Camborne", "Chivenor", "Eskdalemuir", "Leuchars", "Lowestoft", "Manston", "Nairn", "Oxford", "Paisley", "Ringway", "Ross", "Shawbury", "Sheffield", "Southampton", "Stornoway", "Sutton", "Tiree", "Valley", "Waddington", "Whitby", "Wick", "Yeovilton", "uvicorn"
+  ],
+  "cSpell.ignoreRegExpList": [
+    "/[A-Za-z]+data/", // ignore station data variable names
+    "/station_list/"
+  ],
+  "cSpell.languageSettings": [
+    {
+      "languageId": "python",
+      "ignoreRegExpList": ["/[A-Za-z_]+/"]
+    }
+  ]
+}
