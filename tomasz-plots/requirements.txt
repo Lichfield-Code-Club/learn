@@ -1,0 +1,9 @@
+beautifulsoup4 
+fastapi 
+jinja2 
+uvicorn 
+plotly 
+pandas 
+python-multipart
+certifi
+playwright  # for converting plots to PNG

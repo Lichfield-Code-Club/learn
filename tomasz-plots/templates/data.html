@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>{{ title | title }}</h1>
+    <table>
+        {% for row in data[0] %}
+            <th>
+                {{ row }}
+            </th>
+        {% endfor %}
+        
+        {% for row in data %}
+        <tr>
+            {% for key,value in row.items() %}
+                <td>{{ value }}</td>
+            {% endfor %}
+        {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>

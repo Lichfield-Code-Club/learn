@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Plot</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Weather Plot Generator</h1>
+    <form method="post">
+        <label for="station">Station:</label>
+        <select name="station" id="station">
+            {% for s in station_list %}
+            <option value="{{ s['station'] }}">{{ s['station'] }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="year">Year:</label>
+        <input type="text" name="year" id="year" value="{{ default_year }}">
+        <br>
+        <label for="variable">Variable:</label>
+        <select name="variable" id="variable">
+            <option value="tmax">Maximum temperature</option>
+            <option value="tmin">Minimum temperature</option>
+            <option value="af">Air frost days</option>
+            <option value="rain">Rainfall</option>
+            <option value="sun">Sunshine hours</option>
+        </select>
+        <br>
+        <button type="submit">Generate Plot</button>
+    </form>
+    {% if plot_html %}
+    <h2>Plot Result</h2>
+    {{ plot_html|safe }}
+    {% endif %}
+</body>
+</html>

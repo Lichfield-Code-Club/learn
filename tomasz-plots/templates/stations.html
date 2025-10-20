@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Stations</title>
+</head>
+<body>
+    <h1>Weather Station Data Links</h1>
+    <table>
+        <tr>
+            <th>Station</th>
+            <th>Location</th>
+            <th>From</th>
+            <th>Link</th>
+            <th>Text</th>
+            <th>Json</th>
+        </tr>
+        {% for station_detail in station_list %}
+            <tr>
+                <td>{{ station_detail['station'] }}</td>
+                <td>{{ station_detail['location'] }}</td>
+                <td>{{ station_detail['openend'] }}</td>
+                <td><a href="{{ station_detail['href'] }}">url</a></td>
+                <td><a href="{{ url_for('text_data', station_name=station_detail['shortname']) }}">text</a></td>
+                <td><a href="{{ url_for('json_data', station_name=station_detail['shortname']) }}">json</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

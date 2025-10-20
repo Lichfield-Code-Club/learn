@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Weather Data from {{ start_date }} to {{ end_date }}</h1>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Temperature</th>
+            <th>Description</th>
+        </tr>
+        {% for date, data in weather_data.items() %}
+        <tr>
+            <td>{{ date }}</td>
+            <td>{{ data.temperature }}°C</td>
+            <td>{{ data.description }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

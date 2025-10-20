@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>App Links</h1>
+    <div>
+        <a href="http://127.0.0.1:8000/help">Help (this page)</a>
+    </div>
+    <div>
+        <a href="http://127.0.0.1:8000/plot">Plot</a>
+    </div>
+    <div>
+        <a href="http://127.0.0.1:8000/dates">Select Dates (Sample Data)</a>
+    </div>
+    <a href="http://127.0.0.1:8000/stations">Station List</a>
+    </div>
+    <div>
+        <a href="http://127.0.0.1:8000/stations">Station</a>
+    </div>
+    <div>
+        {% for station_details in station_list %}
+        <a href="http://127.0.0.1:8000/station/data/{{ station_details['shortname'] }}">{{ station_details['station'] }} Station Data</a>
+        {% endfor %}
+    </div>
+    <div>
+        <a href="http://127.0.0.1:8000/refresh/stations">Refresh Station Data</a>
+    </div>    
+    <div>
+</body>
+</html>
