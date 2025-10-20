@@ -1,0 +1,79 @@
+back_btn: images/back64_btn.png
+background_image_fpath: images/background.png
+base_end: 860
+base_start: 940
+buttons:
+- image: images/start_btn.png
+  name: start
+  x: 300
+  y: 400
+- image: images/exit_btn.png
+  name: exit
+  x: 700
+  y: 400
+car_crash_fpath: images/ouch25.png
+car_crash_sound: sounds/car-crash.mp3
+car_crash_volume: 0.5
+car_image_fpath: images/car.png
+car_max_speed: 6
+car_min_speed: 1
+car_spawn_rate: 500
+controls:
+  cars:
+    colour: white
+    h: 20
+    how_many: 60
+    label: number
+    w: 40
+    x: 1000
+    y: 840
+dn_arrow: images/arrow-down.png
+frame_rate: 60
+frog_image_fpath: images/frog.png
+frog_jump_sound: sounds/frog-jump01.mp3
+frog_jump_speed: 6
+frog_max_speed: 6
+frog_min_speed: 2
+game_title: frogger
+large_text_font: lucida sans
+large_text_size: 48
+medium_text_font: lucida sans
+medium_text_size: 32
+log_image_fpath: images/log.png
+log_jump_sound: sounds/frog-jump01.mp3
+log_max_speed: 4
+log_min_speed: 1
+log_miss_fpath: images/ouch25.png
+login_btn: images/login.png
+num_backgrounds: 1
+num_cars: 10
+num_frogs: 1
+num_logs: 90
+play_btn: images/play64.png
+player:
+  fpath: game_config.yaml
+  history_box_h: 100
+  history_box_w: 700
+  history_box_x: 300
+  history_box_y: 600
+  max_name_len: 10
+  name: null
+  name_box_h: 40
+  name_box_w: 300
+  name_box_x: 600
+  name_box_y: 260
+  runs:
+  - end: null
+    score: null
+    start: 09/07/2023 14:56:42
+  valid: true
+quit_btn: images/quit_btn.png
+road_end: 470
+road_start: 810
+screen_height: 960
+screen_width: 1280
+small_text_font: Anonymous Pro
+small_text_size: 20
+up_arrow: images/arrow-up.png
+water_end: 50
+water_start: 425
