@@ -231,8 +231,9 @@ def keydown(event):
     elif event.key == K_s:
         paddle1_vel = 8
     elif event.key == K_r:
-        init()
-        GAME_IN_PLAY = True
+        if not GAME_IN_PLAY:
+            init()
+            GAME_IN_PLAY = True
     elif event.key == K_ESCAPE:
         pygame.quit()
         sys.exit()
